@@ -1,56 +1,153 @@
+@font-face {
+  font-family: 'Accasia';
+  src: url('fonts/Accasia_Demo.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cyber Brush';
+  src: url('fonts/Cyber\ Brush.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mechline';
+  src: url('fonts/Mechline.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Backover';
+  src: url('fonts/Backover-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Hello Botuna';
+  src: url('fonts/Hello\ Botuna.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Brunson';
+  src: url('fonts/Brunson.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
 body {
   font-family: Arial, sans-serif;
-  background-color: #F2F2F2;
+  background-color: white;
   margin: 0;
   padding: 0;
-  padding-top: 100px;
+  padding-top: 50px;
   color: #333;
+  overflow-x: hidden;
 }
 
 h1 {
-  color: #6D49F2;
-  margin-top: 20px;
+  color: black;
+ 
+  margin: 0;
+  font-family: "Hello Botuna", sans-serif;
+  font-weight: 400;
+  font-style: bold;
+  font-size: 100px;
 }
 
 h3 {
-  color: #8777F2;
-  margin-bottom: 10px;
+  color: black;
+  margin: 0;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 30px;
 }
 
 .cabecalho {
   text-align: center;
-  padding: 20px;
-  background-color: #F2F2F2;
-  
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  height: 450px;
+  padding-bottom: 70px;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
-img {
-  border-radius: 20px;
+.cabeçalhoText {
+  padding-top: 90px;
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 0
+}
+
+img.perfil {
+  width: 400px;
+  height:auto;
+  padding-top: 50px;
+  padding-right: 10px;
+  max-width: 100%;
 }
 
 .menu {
-  position: fixed;
-  width: 100%;
+  width: 90%;
   top: 0;
   left: 0;
-  z-index: 1000;
   text-align: center;
   justify-content: center;
-  padding: 30px;
-  background-color: #611DF2;
+  padding: 5px;
+  background-color: white;
 }
 
 .menu a {
+  position: relative;
   margin: 0px 30px;
   text-decoration: none;
-  color: #3DF27C;
+  color: black;
+  font-family: "Hello Botuna", sans-serif;
   font-weight: bold;
-  font-size: 25px;
-  padding-top: 15px;
+  font-size: 30px;
+  padding: 10px 15px;
+  overflow: hidden;
+  z-index: 1;
 }
 
+.menu a::before {
+  content: '';
+  position: absolute;
+  left: 10px;
+  top: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #F20519;
+  transition: width 0.4s ease;
+  z-index: -1;
+  transform: skewX(-20deg);
+  
+}
+
+.menu a:hover::before {
+  width: 105%;
+}
 .menu a:hover {
-  text-decoration: underline;
+  color: white;
 }
 
 .conteudo {
@@ -60,8 +157,8 @@ img {
 }
 
 iframe {
-  border: 2px solid #ccc;
-  border-radius: 8px;
+  border: none;
+  width: 100%;
 }
 
 hr {

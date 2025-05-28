@@ -1,35 +1,126 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Currículo - João Vitor Malveira</title>
-    <link rel="stylesheet" href="estilo.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Currículo - João Vitor Malveira</title>
+  <link rel="stylesheet" href="estilo.css" />
+  <link rel="stylesheet" href="componentes/estiloSobre.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100..900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Yellowtail&display=swap" rel="stylesheet" />
 </head>
-<body>
 
+<body>
+  <div class="main">
     <nav class="menu">
-        <a href="componentes/sobre.html" target="main">Sobre</a>
-        <a href="componentes/formacao.html" target="main">Formação</a>
-        <a href="componentes/experiencia.html" target="main">Experiência</a>
-        <a href="componentes/habilidades.html" target="main">Habilidades</a>
-        <a href="componentes/endereco.html" target="main">Endereço</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#formacao">Formação</a>
+      <a href="#experiencia">Experiência</a>
+      <a href="#habilidades">Habilidades</a>
+      <a href="#endereco">Endereço</a>
     </nav>
 
     <div class="cabecalho">
-        <h1>João Vitor Malveira da Silva</h1>
-        <img src="imagens/9d6791d7-c111-48ab-875b-1cbaaa955f4b.png" alt="Foto de João Vitor Malveira" width="250px" title="João Vitor Malveira">
-        <h3>(Biólogo e futuro Analista de Sistemas)</h3>
-    </div>
-    <div class="conteudo">
-        <iframe src="componentes/sobre.html" width="100%" height="450px" title="Currículo de João Vitor" name="main" frameborder="0"></iframe>
+      <div class="cabeçalhoText">
+        <h1>João Vitor Malveira</h1>
+        <h3>Biólogo e futuro Analista de Sistemas</h3>
+      </div>
+      <img class="perfil" src="imagens/Design sem nome (6).png" alt="Foto de João Vitor Malveira" title="João Vitor Malveira" />
     </div>
 
-    <hr>
+    <section id="sobre">
+      <div class="sobreContent">
+        <div class="text">
+          <h2>Sobre</h2>
+          <p>
+            Bacharel em Ciências Biológicas pela Universidade Federal de Pernambuco (UFPE), graduando no curso de Análise e Desenvolvimento de Sistemas pela Faculdade SENAC Pernambuco. Atualmente trabalha no setor financeiro da Construtora JR Oliveira.
+          </p>
+        </div>
 
+        <div class="contat">
+          <div class="contatImage">
+            <a href="https://github.com/Malveira16" target="_blank">
+              <img src="../imagens/GitHub-Logo.png" alt="Logo do Gitub" title="Gitub de João Vitor" height="40rem" />
+            </a>
+            <a href="https://www.linkedin.com/in/jo%C3%A3o-vitor-malveira-0728b218a/" target="_blank">
+              <img src="../imagens/logoLinkedin-removebg-preview.png" alt="Logo do linkedin" title="linkedin de João Vitor" height="45rem" />
+            </a>
+          </div>
+
+          <dl>
+            <dt><b>Contato:</b></dt>
+            <dd><b>- E-mail:</b> <a href="mailto:joa.malveira@gmail.com">joa.malveira@mail.com</a></dd>
+            <dd><b>- Telefone:</b> <a href="tel:+55819919070">+558199190-6670</a></dd>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section id="formacao">
+      <h2>Formação</h2>
+       <p>
+         <ol>
+          <li>Bacharel em Ciências Biológicas</li>
+          <dd><b>Universidade:</b> Universidade Federal de Pernambuco (UFPE)</dd>
+          <dd><b>Período:</b> 2016 - 2022</dd>
+        </ol>
+      </p>
+    </section>
+
+    <section id="experiencia">
+      <h2>Experiência Profissional</h2>
+<center>
+    <table border="1" cellpadding="5" cellspacing="2" width="90%">
+        <tr>
+            <th>Período</th>
+            <th>Instituição</th>
+            <th>Cargo</th>
+            <th>Descrição</th>
+        </tr> 
+        <tr>
+            <td>2024 - Atual</td>
+            <td>JR Oliveira</td>
+            <td>Auxiliar Administrativo</td>
+            <td>Atua administrando as contas da empresa, fazendo pagamentos de insumos para as operações</td>
+        </tr>
+        <tr>
+            <td>2020 - 2022</td>
+            <td>Lacimme UFPE</td>
+            <td>Pesquisador de Meiofauna</td>
+            <td>Atuou como pesquisador de meiofauna intersticial do litoral pernambucano</td>
+        </tr>
+        <tr>
+            <td>2018-2019</td>
+            <td>LIAR UFRPE</td>
+            <td>Pesquisador herpetologista</td>
+            <td>Atuou como pesquisador herpetoloista no estudo da espécie Caiman Latirostris</td>
+            
+        </tr>
+
+    </table>
+</center>
+    </section>
+
+    <section id="habilidades">
+      <h2>Habilidades</h2>
+       <ul>
+          <li>Programação em Typescript, Javascript, Python</li>
+          <li>Desenvolvimento Web: React</li>
+          <li>Banco de dados( Mysql)</li>
+          <li>Inglês Técnico</li>
+       </ul>
+    </section>
+
+    <section id="endereco">
+      <center>
+    <iframe src="https://maps.app.goo.gl/284PCxBgChQYY3eT7" width="1000" height="350" frameborder="0" ballowfullscreen="" loanding="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+</center>
+    </section>
+
+    <hr />
+  </div> 
 </body>
 </html>
